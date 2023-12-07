@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+<div></div>
+{% block content %}
+<div class="container">
+  {% if data.name %}
+  <h1>Name: {{data.name}}</h1>
+  <h1>Email: {{data.email}}</h1>
+  {% else %}
+  <h3>Data empty</h3>
+  {% endif %}
+</div>
+{% endblock content %}
